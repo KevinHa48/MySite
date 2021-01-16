@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'carlitobold';
+    src: url('carlito-bold-webfont.woff2') format('woff2'),
+         url('carlito-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'carlitoregular';
+    src: url('carlito-regular-webfont.woff2') format('woff2'),
+         url('carlito-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.body {
+    font-family: "carlitobold";
+}
+
+.navbar-nav a{
+    font-family: "carlitoregular";
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.contact-form {
+    padding-top: 80px;
+}
+.piss {
+    display: inline-block;
+}
+legend {
+    font-family: "carlitoregular";
+    background-color: #2a2f33;
+    color: white;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    padding: 3px 10px;
+}
+
+fieldset {
+    border: 1.5px solid !important;
+    padding: 45px;
+}
+
+.my-info {
+    font-size: 25px;
+    letter-spacing: -1px;
+}
+
+.about-btn {
+    font-family: carlitoregular;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-color: black;
+    transition-duration: 0.4s;
+}
+
+.about-btn:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+}
+
+.site-logo img {
+    width: 70%;
+}
+
+.infoMe {
+    background-color: #1e1d24;
+    color: white;
+    font-size: 20px;
+}
+
+.portrait {
+    width: 90%;
+    padding-top: 75px;
+   
+}
+
+@media (min-width: 768px) {  
+    .nav-item:not(:last-child):after{
+        content: "|";
+        padding-left: .85em;
+    }
+    
+}
+
