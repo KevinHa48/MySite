@@ -1,19 +1,23 @@
 @font-face {
     font-family: 'carlitobold';
-    src: url('carlito-bold-webfont.woff2') format('woff2'),
-         url('carlito-bold-webfont.woff') format('woff');
+    src: url('font/carlito-bold-webfont.woff2') format('woff2'),
+         url('font/carlito-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'carlitoregular';
-    src: url('carlito-regular-webfont.woff2') format('woff2'),
-         url('carlito-regular-webfont.woff') format('woff');
+    src: url('font/carlito-regular-webfont.woff2') format('woff2'),
+         url('font/carlito-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+a {color: inherit;}
+a:hover {color: inherit;}
+
 .body {
     font-family: "carlitobold";
 }
@@ -28,8 +32,13 @@ h1{
     font-size: 50px;
 }
 
+.mini-info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .contact-form {
-    padding-top: 80px;
+    padding-top: 70px;
 }
 .piss {
     display: inline-block;
@@ -47,7 +56,7 @@ legend {
 
 fieldset {
     border: 1.5px solid !important;
-    padding: 45px;
+    padding: 30px 45px 45px 45px;
 }
 
 .my-info {
@@ -91,6 +100,13 @@ fieldset {
         content: "|";
         padding-left: .85em;
     }
+    .add-contact {
+        padding: 20px;
+    }
     
+}
+
+@media (min-width: 576px) {
+   
 }
 
