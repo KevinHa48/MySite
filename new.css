@@ -32,13 +32,49 @@ h1{
     font-size: 50px;
 }
 
-.mini-info {
+.contact-header {
     text-align: center;
     padding-bottom: 20px;
 }
 
+
+.section-item {
+    border-left: 2px solid grey;
+    padding-left: 15px;
+    margin-left: 5px;
+    height: 120px;
+    
+}
+
+.section-item > h5{
+    line-height: 80%;
+}
+
+.contact-form .section-col .section-item:last-child {
+    height: 70px;
+}
+
+.section-item:before{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid black;
+    width: 15px;
+    height: 15px;
+    left: 14px;
+    right: 0;
+   
+}
+
+.mini-social {
+    padding-bottom: 20px;
+}
+
 .contact-form {
-    padding-top: 70px;
+    padding-top: 40px;
+    
 }
 .piss {
     display: inline-block;
@@ -50,13 +86,13 @@ legend {
     width: auto;
     margin-left: auto;
     margin-right: auto;
-    font-size: 40px;
+    font-size: 38px;
     padding: 3px 10px;
 }
 
 fieldset {
     border: 1.5px solid !important;
-    padding: 30px 45px 45px 45px;
+    padding: 20px 45px 45px 45px;
 }
 
 .my-info {
@@ -105,8 +141,3 @@ fieldset {
     }
     
 }
-
-@media (min-width: 576px) {
-   
-}
-
