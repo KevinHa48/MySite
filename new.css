@@ -34,14 +34,12 @@ h1{
 
 .contact-header {
     text-align: center;
-    padding-bottom: 20px;
 }
 
 
 .section-item {
     border-left: 2px solid grey;
     padding-left: 15px;
-    margin-left: 5px;
     height: 120px;
     
 }
@@ -50,8 +48,35 @@ h1{
     line-height: 80%;
 }
 
-.contact-form .section-col .section-item:last-child {
+.section-col {
+    padding: 25px 0 5px 0;
+    margin-left: 55px;
+}
+
+.section-col .section-item:last-child {
     height: 70px;
+}
+
+.section-header {
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+.section-header h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-header h2:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid;
 }
 
 .section-item:before{
@@ -63,9 +88,16 @@ h1{
     border: 3px solid black;
     width: 15px;
     height: 15px;
-    left: 14px;
-    right: 0;
-   
+    left: 64px;
+}
+
+.but {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.resume {
+    padding-bottom: 100px;
 }
 
 .mini-social {
