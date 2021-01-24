@@ -59,7 +59,7 @@ h1{
 
 .section-header {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     
 }
 
@@ -161,6 +161,48 @@ fieldset {
     width: 90%;
     padding-top: 75px;
    
+}
+
+.about-section {
+    padding-bottom: 200px;
+}
+
+.about-section .section-header {
+    padding-bottom: 20px;
+}
+
+.more-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.img-div {
+    border-bottom: 1px solid;
+    margin-top: 30px;
+    width: 75%
+}
+
+.tech {
+    text-align: center;
+}
+
+.lan-use {
+    display: inline-block;
+}
+
+.lan-use:not(:last-child):after {
+    content: "|";
+    padding: .50em;
+}
+
+.an {
+    margin-top: 50px;
+}
+
+.astudio-logo {
+    padding-bottom: 15px;
+    width: 11%;
+
 }
 
 @media (min-width: 768px) {  
