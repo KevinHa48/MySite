@@ -184,24 +184,27 @@ fieldset {
 
 .tech {
     text-align: center;
+    padding-top: 20px;
+    padding-right: 15px;
 }
 
 .lan-use {
-    display: inline-block;
-}
-
-.lan-use:not(:last-child):after {
-    content: "|";
-    padding: .50em;
+    display: inline;
 }
 
 .an {
     margin-top: 50px;
 }
 
-.astudio-logo {
+.soup {
+    position:relative;
+    bottom: 10px;
+    width: 35%;
+}
+
+.an-logo {
     padding-bottom: 15px;
-    width: 11%;
+    width: 12%;
 
 }
 
