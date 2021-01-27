@@ -59,7 +59,7 @@ h1{
 
 .section-header {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     
 }
 
@@ -197,8 +197,8 @@ fieldset {
 }
 
 .soup {
-    position:relative;
-    bottom: 10px;
+    position: relative;
+    bottom: 5px;
     width: 35%;
 }
 
@@ -206,6 +206,25 @@ fieldset {
     padding-bottom: 15px;
     width: 12%;
 
+}
+
+.carousel {
+    margin-top: 70px;
+    max-width: 90%;
+}
+
+.fa-arrow-right, .fa-arrow-left {
+    color: black;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 30%;
+    padding: 45%;
+}
+
+.carousel-indicators {
+    bottom: 100%;
+    color:black;
 }
 
 @media (min-width: 768px) {  
