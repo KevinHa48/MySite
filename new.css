@@ -15,33 +15,122 @@
 
 }
 
+/* Animation Section */
+.container-fluid,
+.navbar,
+.section-header {
+    position: relative;
+    -webkit-animation-name: topbot;
+    -webkit-animation-duration: 2s;
+    animation-name: topbot;
+    animation-duration: 2s;
+
+}
+
+@-webkit-keyframes topbot {
+    from {top: -50px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+@keyframes topbot {
+    from {top: -50px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+/*-----------------------------------*/
+
+
 a {color: inherit;}
 a:hover {color: inherit;}
+
+
+.ddrbot {
+    width: 100%;
+}
+
+.covidapp {
+    width: 95%;
+}
+
+.section-col ul {
+    padding-left: 20px;
+}
+
+.course-list li {
+    padding-bottom: 7px;
+}
+
+.container-fluid.portfolio {
+    width: 65%;
+}
+
+.container-fluid {
+    width: 75%;
+}
+
+.landing {
+    margin-bottom: 20%;
+}
+
+.landing-img {
+    margin-left: 25%;
+    width: 29em;
+}
+
+.landing-socials i {
+    padding-top: 2%;
+    margin-right: 4%;
+    
+}
+
+
 
 .body {
     font-family: "carlitobold";
 }
 
-.navbar-nav a{
-    font-family: "carlitoregular";
-    font-size: 18px;
+.navbar {
+    margin-top: 4%;
+    margin-left: 12.5%;
+    max-width: 72%;
 }
 
-h1{
-    text-align: center;
-    font-size: 50px;
+
+.navbar-nav a{
+    margin-top: 5%;
+    font-family: "carlitoregular";
+    font-size: 22px;
+}
+
+.my-info h1{
+    font-size: 60px;
 }
 
 .contact-header {
-    text-align: center;
+    text-align: l;
 }
 
+.ind-skills {
+    margin-top: 5%;
+    
+}
+
+
+.sk-icons i {
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+
+.sk-icons span {
+    margin-right: 3%;
+}
 
 .section-item {
     border-left: 2px solid grey;
     padding-left: 15px;
-    height: 120px;
-    
+    padding-bottom: 10px;
+    height: 100%;
 }
 
 .section-item > h5{
@@ -50,19 +139,36 @@ h1{
 
 .section-col {
     padding: 25px 0 5px 0;
-    margin-left: 55px;
+}
+
+.section-name {
+    color: rgb(60,62,62);
+    text-decoration: underline;
+    letter-spacing: -1.0px;
 }
 
 .section-col .section-item:last-child {
-    height: 70px;
-}
-
-.section-header {
-    text-align: center;
-    padding-top: 40px;
+    height: auto;
     
 }
 
+.section-header {
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 13.4%;
+    
+}
+
+.section-header h3 {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+}
+
+.section-header h4 {
+    color: gray;
+}
+
+/*
 .section-header h2 {
     display: inline-block;
     padding-bottom: 10px;
@@ -78,6 +184,7 @@ h1{
     left: 25%;
     border-bottom: 2px solid;
 }
+*/
 
 .section-item:before{
     content: " ";
@@ -88,7 +195,7 @@ h1{
     border: 3px solid black;
     width: 15px;
     height: 15px;
-    left: 64px;
+    left: 0.55em;
 }
 
 .but {
@@ -128,7 +235,7 @@ fieldset {
 }
 
 .my-info {
-    font-size: 25px;
+    font-size: 21.5px;
     letter-spacing: -1px;
 }
 
@@ -147,8 +254,10 @@ fieldset {
     border-color: black;
 }
 
-.site-logo img {
-    width: 70%;
+.navbar-brand{
+   font-size: 35px;
+   font-weight: 600;
+   letter-spacing: -1px;
 }
 
 .infoMe {
@@ -192,48 +301,76 @@ fieldset {
     display: inline;
 }
 
-.an {
-    margin-top: 50px;
-}
-
-.soup {
-    position: relative;
-    bottom: 5px;
-    width: 35%;
-}
-
-.an-logo {
-    padding-bottom: 15px;
-    width: 12%;
-
-}
 
 .carousel {
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 100px;
     max-width: 90%;
 }
+
 
 .fa-arrow-right, .fa-arrow-left {
     color: black;
 }
 
 .carousel-control-prev, .carousel-control-next {
-    top: 30%;
-    padding: 45%;
+    top: 50%;
+    bottom: 50%;
 }
 
-.carousel-indicators {
-    bottom: 100%;
-    color:black;
+
+.un-animation {
+    display: inline-block;
+    position: relative;
 }
 
-@media (min-width: 768px) {  
-    .nav-item:not(:last-child):after{
-        content: "|";
-        padding-left: .85em;
+.un-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    margin-left: 2px;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.un-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media (max-width: 992px) {  
+    .landing {
+        text-align: center;
+        margin: auto;
+        padding-top: 15%;
     }
-    .add-contact {
-        padding: 20px;
+
+    .landing-img {
+        margin-right: 20%;
     }
+
+    .my-info {
+        font-size: 20px;
+    }
+    .my-info h1 {
+        font-size: 45px; 
+    }
+
+    .section-header {
+        text-align: center;
+        margin-top: 5%;
+        margin-right: 13.3%;
+    }
+    
+    .section-name {
+        text-align: center;
+    }
+
+    
     
 }

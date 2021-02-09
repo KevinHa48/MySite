@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang="en">
+
     <head>
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        
-        <meta charset = "utf-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1"
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1" 
         
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -19,52 +20,68 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        
-        <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
-        <link rel = "stylesheet" href = "new.css">
-    <!--TODO: fix image getting bigger when resizing window-->  
-    </head>
-    <body>
-        <nav class = "navbar navbar-expand-sm navbar-light bg-light ">
-            <div class = "collapse navbar-collapse w-100 order-1">
-                <div class = "navbar-nav mr-auto social flex-row">
-                    <a class = "nav-item nav-link left-head" href = "#"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <a class = "nav-item nav-link left-head" href = "#"><i class="fab fa-github fa-lg"></i></a>
-                    <a class = "nav-item nav-link left-head" href = "#"><i class="fab fa-twitter fa-lg"></i></a>
-                </div>
-            </div>
-            <div class = "mx-auto order-0 order-sm-2">
-                <a class = "navbar-brand site-logo mx-auto" href = "#">
-                    <img src = "logo.png" class = "img-fluid" alt = "logo">
-                </a>
-            </div>
-    
-            <div class = "collapse navbar-collapse w-100 order-3" id = "collapsibleNav">
-                <div class = "navbar-nav ml-auto">
-                    <a class = "nav-item nav-link right-head" href = "#">Resume</a>
-                    <a class = "nav-item nav-link right-head" href = "#">Portfolio</a>
-                    <a class = "nav-item nav-link right-head" href = "#">Contact</a>
-                </div>
-            </div>
 
-            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNav">
-                <span class = "navbar-toggler-icon"></span>
+        <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="new.css">
+        <!--TODO: fix image getting bigger when resizing window-->
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand mb-0 h1 site-logo" href="test.html"><span class = "un-animation">Kevin Ha</span></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </nav>
-        
-        <div class="container justify-content-center">
-                <div class = "col-md-6 mx-auto">
-                    <img src = "self_me.png" class = "portrait">
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">About</a>
+                    <a class="nav-item nav-link" href="resume.html"><span class ="un-animation">Resume</span></a>
+                    <a class="nav-item nav-link" href="portfolio.html"><span class ="un-animation">Portfolio</span></a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
                 </div>
             </div>
+        </nav>
+
+        <div class="container-fluid d-flex align-items-center vh-100">
+            <div class="row landing">
+                <div class="col-lg-6 order-1">
+                    <div class="my-info">
+                        <h1>Hey, I'm Kevin!</h1>
+                        <h3>Aspiring Web Developer and Artist</h3>
+                        <p>I'm currently a sophomore Computer Science student studying
+                            at Stevens Institute of Technology based in Hoboken, New Jersey.
+                        </p>
+                        <p>
+                            Recently, I gained a strong interest for Web Development and I am actively working towards
+                            building my skills within the field. I also have experience in Data Science, Android App Development,
+                            Web Scraping, and basic game development.
+                        </p>
+                        <p>
+                            Outside of developing, you can find me working on digital art or enjoying music. Thanks for
+                            visiting my site!
+                        </p>
+
+                        <p>
+                            Feel free to contact me in any of these sites below or at <span style = "text-decoration: underline">kh220kh@gmail.com.</span>
+                        </p>
+
+                        <p class="landing-socials">
+                            <i class="fab fa-github fa-2x"></i>
+                            <i class="fab fa-linkedin fa-2x"></i>
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-lg-1 d-flex justify-content-center align-items-center">
+                    <img src="img/self_me.png" class="landing-img img-fluid">
+                </div>
+
+            </div>
         </div>
-        <div class = "my-info text-center">
-            <h1>Kevin Ha</h1>
-            <p>Artist | Front-End Developer | Music-lover</p>
-            <button class = "about-btn">More about me!</button>
-        </div>
+
     </body>
-        
-    
-    
+
 </html>

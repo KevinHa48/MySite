@@ -21,55 +21,51 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         
         <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
+        
         <link rel = "stylesheet" href = "new.css">
+
+        <link rel = "stylesheet" href = "ico-moon/style.css">
+
+
     <!--TODO: fix image getting bigger when resizing window-->  
     </head>
     <body>
-        <nav class = "navbar navbar-expand-sm navbar-light bg-light ">
-            <div class = "collapse navbar-collapse w-100 order-1">
-                <div class = "navbar-nav mr-auto social flex-row">
-                    <a class = "nav-item nav-link left-head" href = "#"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <a class = "nav-item nav-link left-head" href = "#"><i class="fab fa-github fa-lg"></i></a>
-                    <a class = "nav-item nav-link left-head" href = "#"><i class="fab fa-twitter fa-lg"></i></a>
-                </div>
-            </div>
-            <div class = "mx-auto order-0 order-sm-2">
-                <a class = "navbar-brand site-logo mx-auto" href = "#">
-                    <img src = "img/logo.png" class = "img-fluid" alt = "logo">
-                </a>
-            </div>
-    
-            <div class = "collapse navbar-collapse w-100 order-3" id = "collapsibleNav">
-                <div class = "navbar-nav ml-auto">
-                    <a class = "nav-item nav-link right-head" href = "#">Resume</a>
-                    <a class = "nav-item nav-link right-head" href = "#">Portfolio</a>
-                    <a class = "nav-item nav-link right-head" href = "#">Contact</a>
-                </div>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand mb-0 h1 site-logo" href="test.html"><span class = "un-animation">Kevin Ha</span></a>
 
-            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#collapsibleNav">
-                <span class = "navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link active" href="resume.html">Resume</a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
         </nav>
         
         <div class = "section-header">
-            <h2>Resume</h2>
+            <h3>My Resume</h3><br>
+            <h4>Click <span style = "text-decoration: underline">here</span> to download my resume.</h4>
         </div>
-
+        <!--
         <div class = "but">
             <button type = "submit" class = "btn btn-dark btn-lg">Click here for a PDF of my Resume</button>
         </div>
-
-        <div class = "container resume contact-form">
-            
+        -->
+        <div class = "container-fluid resume contact-form">
             <div class = "row justify-content-center">
-                <div class = "col-lg-6">
+                <div class = "col-lg-4">
                     <div class = "section-col">
-                        <h4>Education</h4><br>
+                        <h4 class = "section-name">Education</h4><br>
                         <div class = "section-item">
                             <h5>Stevens Institute of Technology</h5>
                             <h6>Bachelor of Science, Computer Science</h6>
                             <p>Hoboken, NJ | Class of 2023</p>
+                            <p>Dean's List</p>
                         </div>
                         <div class = "section-item">
                             <h5>Washingtonville High School</h5>
@@ -83,27 +79,55 @@
                             <h5>FluroSat</h5>
                             <h6>Digital Marketing Intern</h6>
                             <p>June 2020 - August 2020</p>
+                            <ul>
+                                <li>Collaborated on research to refine FluroSat’s current marketing strategies by performing analysis on competitor 
+                                    initiatives and compiling 100s of customer data to identify new clientele.</li>
+                                <li>Utilized Pandas data science library to organize competitor social media data and trends 
+                                    to enhance FluroSat’s online presence.</li>
+                                <li>Conducted research on methods to improve FluroSat’s current SEO strategies through keyword analysis 
+                                    and website optimization.</li>
+                            </ul>
                         </div>
                         <div class = "section-item">
                             <h5>iDTech</h5>
                             <h6>Virtual Tech Camps Instructor</h6>
                             <p>June 2020 - July 2020</p>
+                            <ul>
+                                <li>
+                                    Instructed a total of 15+ children, ages ranging from 10-13, basic Java programming fundamentals and game design principles through modifying Minecraft in an online tech camp setting.
+                                </li>
+                            </ul>
+                               
+                            
                         </div>
                     </div>
                 </div>
 
-                <div class = "col-lg-6">
+                <div class = "col-lg-4">
                     <div class = "section-col">
                         <h4 class = "section-name">Other Experience</h4><br>
                         <div class = "section-item">
                             <h5>Walgreens</h5>
                             <h6>Customer Service Associate</h6>
-                            <p>January 2020 - Current</p>
+                            <p>January 2021 - February 2021</p>
                         </div>
                         <div class = "section-item">
                             <h5>Castle Point Anime Convention</h5>
                             <h6>Webmaster, First Aid, Arcade Cabinets, Head of Panels</h6>
                             <p>2019 - Current</p>
+                            <ul>
+                                <li>
+                                    Utilized AWS Amplify, Hugo, and Git to deploy and update content on a static website, with an average 
+                                    of 200+ page views a week, for Castle Point Anime Convention.
+                                </li>
+                                <li>
+                                    Developed an AWS Route 53 subdomain for artists and vendors to advertise
+                                    their products during the 2020 Virtual Castle Point Anime Convention.
+                                </li>
+                                <li>
+                                    Directed the Panels Committee which reviews and approves panelist applications for the convention.
+                                </li>
+                            </ul>
                         </div>
                         <div class = "section-item">
                             <h5>Sunmerry</h5>
@@ -111,13 +135,91 @@
                             <p>September 2020 - December 2020</p>
                         </div>
                         <div class = "section-item">
-                            <h5>Bishop Dunn SummerFUNdamentals</h5>
+                            <h5>Bishop Dunn Memorial School</h5>
                             <h6>Summer Camp Counselor</h6>
                             <p>Summer of 2017 - Summer of 2020</p>
+                            <ul>
+                                <li>
+                                    Coordinated and supervised children, grades K-8, in recreational
+                                    and academic activities in a traditional summer camp setting.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-lg-4">
+                    <div class = "section-col">
+                        <h4 class = "section-name">Clubs / ECs</h4><br>
+                        <div class = "section-item">
+                            <h5>Society of Asian Scientists & Engineers</h5>
+                            <h6>Club Member</h6>
+                            <p>2019 - Current</p>
+                        </div>
+                        <div class = "section-item">
+                            <h5>Stevens Bowling Club</h5>
+                            <h6>Team Member</h6>
+                            <p>2019 - Current</p>
+                        </div>
+                        <div class = "section-item">
+                            <h5>Stevens Running Club</h5>
+                            <h6>Team Member</h6>
+                            <p>2019 - Current</p>
+                        </div>
+                    </div>
+                    <div class = "section-col">
+                        <h4 class = "section-name">Coursework</h4><br>
+                        <div class = "section-item">
+                            <h5>Computer Science Courses</h5>
+                            <p>2019 - Current</p>
+                            <ul class = "course-list">
+                                <li>Intro to Computer Science</li>
+                                <li>Intro to Web Programming</li>
+                                <li>Data Structures</li>
+                                <li>Discrete Structures</li>
+                                <li>Algorithms</li>
+                                <li>Theory of Computation</li>
+                                <li>Computer Organization & Programming</li>
+                                <li>Systems Programming</li>
+                                <li>Programming Languages</li>
+                                <li>Software Development Process</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class = "row text-center ind-skills">
+                <div class = "col-lg-12">
+                    <h2 class = "section-name">Programming Languages</h2>
+                    <p class = "sk-icons">
+                        <i class="fab fa-python fa-4x"></i>
+                        <i class="fab fa-java fa-4x"></i>
+                        <i class="fab fa-html5 fa-4x"></i>
+                        <i class="fab fa-css3-alt fa-4x"></i>
+                        <i class="fab fa-js fa-4x"></i>
+                        <span class="icon-cpp"></span>
+                        <span class="icon-c"></span>
+                        <span class="icon-ocaml"></span>
+                    </p>
+                    
+                    <h2 class = "section-name">Tools / Software</h2>
+
+                    <p class = "sk-icons">
+                        <i class="fab fa-android fa-4x"></i>
+                        <i class="fab fa-aws fa-4x"></i>
+                        <i class="fab fa-bootstrap fa-4x"></i>
+                        <i class="fab fa-git-alt fa-4x"></i>
+                        <i class="fab fa-ubuntu fa-4x"></i>
+                        <span class="icon-flask"></span>
+                        <span class="icon-postgresql"></span>
+                        <span class="icon-photoshop"></span>
+                        <span class="icon-premiere"></span>
+                    </p>
+                </div>
+              
+            </div>
+
         </div>
 
     </body>
