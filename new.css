@@ -15,50 +15,77 @@
 
 }
 
+/* Extra Aesthetic Functionality */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.landing-socials i:hover {
+    opacity: .5;
+}
+
+.un-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.un-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    margin-left: 1.2px;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.un-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*-----------------------------------*/
+
 /* Animation Section */
-.container-fluid,
-.navbar,
-.section-header {
+body {
     position: relative;
     -webkit-animation-name: topbot;
     -webkit-animation-duration: 2s;
     animation-name: topbot;
-    animation-duration: 2s;
+    animation-duration: 1.7s;
 
 }
 
 @-webkit-keyframes topbot {
-    from {top: -50px; opacity: 0}
+    from {top: -75px; opacity: 0}
     to {top: 0px; opacity: 1}
 }
 
 @keyframes topbot {
-    from {top: -50px; opacity: 0}
+    from {top: -75px; opacity: 0}
     to {top: 0px; opacity: 1}
 }
 
 /*-----------------------------------*/
 
-
 a {color: inherit;}
 a:hover {color: inherit;}
 
-
-.ddrbot {
-    width: 100%;
+.source-links {
+    text-decoration: underline;
 }
 
-.covidapp {
-    width: 95%;
-}
 
-.section-col ul {
-    padding-left: 20px;
-}
-
-.course-list li {
-    padding-bottom: 7px;
-}
+/* Sitewide CSS Settings */
 
 .container-fluid.portfolio {
     width: 65%;
@@ -68,8 +95,18 @@ a:hover {color: inherit;}
     width: 75%;
 }
 
+/* ---------------------- */
+
+/* Landing Section */
+
 .landing {
-    margin-bottom: 20%;
+    margin-top: 5%;
+}
+
+.portrait {
+    width: 90%;
+    padding-top: 75px;
+   
 }
 
 .landing-img {
@@ -83,11 +120,22 @@ a:hover {color: inherit;}
     
 }
 
-
-
-.body {
-    font-family: "carlitobold";
+.my-info {
+    font-size: 21.5px;
+    letter-spacing: -1px;
 }
+
+
+.my-info h1{
+    font-size: 60px;
+}
+
+
+/* -------------------- */
+
+
+
+/* Navbar Section */
 
 .navbar {
     margin-top: 4%;
@@ -102,29 +150,17 @@ a:hover {color: inherit;}
     font-size: 22px;
 }
 
-.my-info h1{
-    font-size: 60px;
-}
 
-.contact-header {
-    text-align: l;
-}
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -1px;
+ }
 
-.ind-skills {
-    margin-top: 5%;
-    
-}
+/* --------------------------- */
 
 
-.sk-icons i {
-    margin-top: 5%;
-    margin-right: 3%;
-    margin-bottom: 5%;
-}
-
-.sk-icons span {
-    margin-right: 3%;
-}
+/* Resume Styling */
 
 .section-item {
     border-left: 2px solid grey;
@@ -139,6 +175,10 @@ a:hover {color: inherit;}
 
 .section-col {
     padding: 25px 0 5px 0;
+}
+
+.section-col ul {
+    padding-left: 20px;
 }
 
 .section-name {
@@ -168,24 +208,6 @@ a:hover {color: inherit;}
     color: gray;
 }
 
-/*
-.section-header h2 {
-    display: inline-block;
-    padding-bottom: 10px;
-    position: relative;
-}
-
-.section-header h2:before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 1px;
-    bottom: 0;
-    left: 25%;
-    border-bottom: 2px solid;
-}
-*/
-
 .section-item:before{
     content: " ";
     display: inline-block;
@@ -198,113 +220,38 @@ a:hover {color: inherit;}
     left: 0.55em;
 }
 
-.but {
-    text-align: center;
-    padding-top: 20px;
-}
-
 .resume {
     padding-bottom: 100px;
 }
 
-.mini-social {
-    padding-bottom: 20px;
+.sk-icons i {
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
-.contact-form {
-    padding-top: 40px;
+.sk-icons span {
+    margin-right: 3%;
+}
+
+.ind-skills {
+    margin-top: 5%;
     
 }
-.piss {
-    display: inline-block;
-}
-legend {
-    font-family: "carlitoregular";
-    background-color: #2a2f33;
-    color: white;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 38px;
-    padding: 3px 10px;
+
+.course-list li {
+    padding-bottom: 7px;
 }
 
-fieldset {
-    border: 1.5px solid !important;
-    padding: 20px 45px 45px 45px;
-}
+/* ----------------------------*/
 
-.my-info {
-    font-size: 21.5px;
-    letter-spacing: -1px;
-}
 
-.about-btn {
-    font-family: carlitoregular;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    border-color: black;
-    transition-duration: 0.4s;
-}
 
-.about-btn:hover {
-    background-color: #ffffff;
-    color: black;
-    border-color: black;
-}
-
-.navbar-brand{
-   font-size: 35px;
-   font-weight: 600;
-   letter-spacing: -1px;
-}
-
-.infoMe {
-    background-color: #1e1d24;
-    color: white;
-    font-size: 20px;
-}
-
-.portrait {
-    width: 90%;
-    padding-top: 75px;
-   
-}
-
-.about-section {
-    padding-bottom: 200px;
-}
-
-.about-section .section-header {
-    padding-bottom: 20px;
-}
-
-.more-info {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.img-div {
-    border-bottom: 1px solid;
-    margin-top: 30px;
-    width: 75%
-}
-
-.tech {
-    text-align: center;
-    padding-top: 20px;
-    padding-right: 15px;
-}
-
-.lan-use {
-    display: inline;
-}
-
+/* Portfolio Section */
 
 .carousel {
+    height: 450px;
     margin-top: 30px;
-    margin-bottom: 100px;
     max-width: 90%;
 }
 
@@ -314,34 +261,43 @@ fieldset {
 }
 
 .carousel-control-prev, .carousel-control-next {
-    top: 50%;
-    bottom: 50%;
+    top: 70%;
+    bottom: 30%;
 }
 
-
-.un-animation {
-    display: inline-block;
-    position: relative;
+.tech {
+    text-align: center;
+    padding-top: 20px;
 }
 
-.un-animation:after {
-    content: '';
-    position: absolute;
+.lan-use {
+    display: inline;
+}
+
+.ddrbot {
     width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    margin-left: 2px;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
 }
 
-.un-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.my-site {
+    width: 100%;
 }
+
+.covidapp {
+    width: 95%;
+}
+
+/* ------------------------*/
+
+/* Artwork Section TO BE UPDATED */
+
+.artwork-section {
+    padding-top: 13em;
+    display: block;
+    letter-spacing: -1px;
+    line-height: 12;
+}
+
+/* ------------------------ */
 
 @media (max-width: 992px) {  
     .landing {
@@ -371,6 +327,15 @@ fieldset {
         text-align: center;
     }
 
-    
+    .navbar {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .tech i {
+        font-size: 2.5em;
+    }
     
 }
