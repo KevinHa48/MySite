@@ -337,5 +337,13 @@ a:hover {color: inherit;}
     .tech i {
         font-size: 2.5em;
     }
+
+    .artwork-section {
+        padding-top: 7em;
+    }
+
+    .artwork-section h2 {
+        font-size: 1.8em;
+    }
     
 }

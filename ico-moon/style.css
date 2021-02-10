@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 576px) {
-  [class^="icon-"], [class*=" icon-"] {
+  .port-icon {
     font-size: 2.5em;
   }
   
